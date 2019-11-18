@@ -7,4 +7,5 @@
  - [ ] 3.Control Windows region setting via program (No need for now.)
  - [ ] 4.Link region setting to Wi-Fi. Namely, region changes as Wi-Fi name changes (No need for now.)
  
-[This might be the document we need, please refer.](https://docs.microsoft.com/zh-tw/windows/configuration/provisioning-packages/provisioning-multivariant)
+[This might be the document we need, please refer.](https://docs.microsoft.com/zh-tw/windows/configuration/provisioning-packages/provisioning-multivariant)  
+Item 2 is an example of how to customize taskbar based on different region (e.g. US, Taiwan...), the link above introduce different variants (including but not limit to region) for customization.
