@@ -11,6 +11,6 @@
 Item 2 is an example of how to customize taskbar based on different region (e.g. US, Taiwan...), the link above introduce different variants (including but not limit to region) for customization.
 
 ## Track User Habit
-[Windows track your activity](https://support.microsoft.com/en-us/help/4468227/windows-10-activity-history-and-your-privacy-microsoft-privacy)
+[Windows track your activity](https://support.microsoft.com/en-us/help/4468227/windows-10-activity-history-and-your-privacy-microsoft-privacy)  
 Might be possible to leverage user's activity history for this project.
 - [ ] Obtain activity history.
