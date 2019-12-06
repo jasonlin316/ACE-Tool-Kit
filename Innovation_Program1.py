@@ -3,11 +3,6 @@ import ctypes
 
 taskbar=['calc','mspaint']
 
-wall_p = []
-wall_p.append("C:\\Users\\linjas\\Documents\\GitHub\\Smart-Scenario-Detector\\wallpaper\\0.jpg")
-wall_p.append("C:\\Users\\linjas\\Documents\\GitHub\\Smart-Scenario-Detector\\wallpaper\\1.jpg")
-wall_p.append("C:\\Users\\linjas\\Documents\\GitHub\\Smart-Scenario-Detector\\wallpaper\\2.jpg")
-
 apps = []
 
 school = []
@@ -52,6 +47,9 @@ def unpin(curr_mode): #unpin
     os.system(cmd)
     cmd = '' 
 
+def change_wallpaper():
+    ctypes.windll.user32.SystemParametersInfoW(20, 0, "absolute path" , 0)
+
 while True:
     new_mode = input('enter mode:')
 
@@ -61,10 +59,9 @@ while True:
         break
 
     if new_mode != curr_mode:
-        ctypes.windll.user32.SystemParametersInfoW(20, 0, wall_p[new_mode] , 0) #change wall paper
         unpin(curr_mode)
         pin(new_mode)
-        
+
     curr_mode = new_mode
 #
 ##5386:pin to taskbar
