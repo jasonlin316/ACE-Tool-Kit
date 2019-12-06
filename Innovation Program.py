@@ -1,5 +1,12 @@
 import os
 
+taskbar=['calc','notepad']
+cmd='cmd /k "\
+    syspin "C:\Windows\\System32\\'+taskbar[0]+'.exe\" 5386 &&  \
+    syspin "C:\Windows\\'+taskbar[1]+'.exe\" 5386 \
+    "'
+os.system(cmd)
+
 #5386:pin to taskbar
 #5387:unpin from taskbar
 
