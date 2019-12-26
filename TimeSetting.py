@@ -96,12 +96,12 @@ while SET>=0: #start settting
 for i in range(0,7):
     (Weekday[i]).period.sort()
 
-now = datetime.datetime.now()
+now = datetime.datetime.now() #get current time
 print(now.strftime('%Y-%m-%d %H:%M'),'\n')
 
-WDay=now.isoweekday()-1
-HR=now.hour*100
-MIN=now.minute
+WDay=now.isoweekday()-1 #get weekday
+HR=now.hour*100 #get hour
+MIN=now.minute #get minute
 nowT=HR+MIN
 
 while True:
