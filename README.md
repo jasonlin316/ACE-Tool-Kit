@@ -2,7 +2,7 @@
  HP Innovation Program, Team ACE  
  *Last Update: 2020.01.20 Morning*
  
- ## Track 1 - Scenario Detector
+ ## Track 1 - Scenario Active Detector (SAD)
  ### Brief Intro
  A tool that will change taskbar and menu based on your location. Used for one computer, different places.
  ### Development Status
@@ -11,7 +11,7 @@
  - [X] 3. Use internet connection name to trigger different shell script.
  - [ ] 4. Integrate all the codes and UI together.
  
- ## Track 2 - Wireless Flash Drive
+ ## Track 2 - Wireless Transfer Flashdrive (WTF)
  ### Brief Intro
  A tool for replacing traditional USB drive and cloud drive. Aim for convience and security.
   ### Development Status
