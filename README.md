@@ -1,6 +1,6 @@
 # Tool Kit For Custormer Experience
  HP Innovation Program, Team ACE  
- *Last Update: 2020.01.20 Morning*
+ *Last Update: 2020.02.10 Afternoon*
  
  ## Track 1 - Scenario Active Detector (SAD)
  ### Brief Intro
@@ -15,8 +15,9 @@
  ### Brief Intro
  A tool for replacing traditional USB drive and cloud drive. Aim for convience and security.
   ### Development Status
- - [X] 1. Read NFC signal and prompt command line
+ - [X] 1. Read NFC signal and prompt command line.
  - [X] 2. Transfer file from phone to PC.
- - [ ] 3. Transfer file from PC to phone.
- - [ ] 4. Open folder for data transfer like an actual USB drive.
- - [ ] 5. Integrate NFC control with file transfer.
+ - [X] 3. Transfer file from PC to phone.
+ - [X] 4. Open folder for data transfer like an actual USB drive.
+ - [X] 5. Integrate NFC control with file transfer.
+ - [ ] 6. Some finalize, such as UI design, control flow.
