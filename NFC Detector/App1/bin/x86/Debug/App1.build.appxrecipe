@@ -25,8 +25,8 @@
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\HP\source\repos\App1\App1\bin\x86\Debug\App1.exe">
-      <PackagePath>entrypoint\App1.exe</PackagePath>
+    <AppxPackagedFile Include="C:\Users\HP\source\repos\App1\App1\bin\x86\Debug\NFC detect.exe">
+      <PackagePath>entrypoint\NFC detect.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.9\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -64,8 +64,8 @@
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\HP\source\repos\App1\App1\bin\x86\Debug\App1.xr.xml">
-      <PackagePath>App1.xr.xml</PackagePath>
+    <AppxPackagedFile Include="C:\Users\HP\source\repos\App1\App1\bin\x86\Debug\NFC detect.xr.xml">
+      <PackagePath>NFC detect.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\HP\source\repos\App1\App1\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
@@ -79,8 +79,8 @@
     <AppxPackagedFile Include="C:\Users\HP\source\repos\App1\App1\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\HP\source\repos\App1\App1\bin\x86\Debug\Core\App1.exe">
-      <PackagePath>App1.exe</PackagePath>
+    <AppxPackagedFile Include="C:\Users\HP\source\repos\App1\App1\bin\x86\Debug\Core\NFC detect.exe">
+      <PackagePath>NFC detect.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

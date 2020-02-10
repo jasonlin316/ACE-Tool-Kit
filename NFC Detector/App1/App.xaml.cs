@@ -15,23 +15,29 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using System.Diagnostics;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace App1
 {
     /// <summary>
     /// Provides application-specific behavior to supplement the default Application class.
     /// </summary>
+    /// 
+
     sealed partial class App : Application
     {
         /// <summary>
         /// Initializes the singleton application object.  This is the first line of authored code
         /// executed, and as such is the logical equivalent of main() or WinMain().
         /// </summary>
+  
         public App()
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
-            this.InitializeProximityDevice();
+            
+            //this.InitializeProximityDevice();
             
         }
 
@@ -86,6 +92,7 @@ namespace App1
             throw new Exception("Failed to load Page " + e.SourcePageType.FullName);
         }
 
+
         /// <summary>
         /// Invoked when application execution is being suspended.  Application state is saved
         /// without knowing whether the application will be terminated or resumed with the contents
@@ -123,8 +130,34 @@ namespace App1
         private void ProximityDeviceArrived(Windows.Networking.Proximity.ProximityDevice device)
         {
             string strCmdText;
-            strCmdText = "/K ipconfig";
-            System.Diagnostics.Process.Start("CMD.exe", strCmdText);
+            strCmdText = "/k python ";
+            Debug.WriteLine("Proximity device arrived.\n");
+            //System.Diagnostics.Process.Start("CMD.exe", strCmdText);
+            //Button_Click(null,null);
+            //var result = task.WaitAndUnwrapException();
+            Task.FromResult(DefaultLaunch());
+
+        }
+
+        // Launch the URI
+        private async Task DefaultLaunch()
+        {
+            string uriToLaunch = @"http://www.bing.com";
+
+            // Create a Uri object from a URI string 
+            var uri = new Uri(uriToLaunch);
+            // Launch the URI
+            //wv.Navigate(new Uri("http://www.bing.com"));
+            var success = await Windows.System.Launcher.LaunchUriAsync(uri);
+            
+            if (success)
+            {
+                // URI launched
+            }
+            else
+            {
+                // URI launch failed
+            }
         }
 
         private void ProximityDeviceDeparted(Windows.Networking.Proximity.ProximityDevice device)
@@ -134,9 +167,7 @@ namespace App1
 
         // Write a message to MessageBlock on the UI thread.
         /*
-        private Windows.UI.Core.CoreDispatcher messageDispatcher = Window.Current.CoreWindow.Dispatcher;
-
-
+        private Windows.UI.Core.CoreDispatcher messageDispatcher = Window.Current.CoreWindow.Dispatcher
         async private void WriteMessageText(string message, bool overwrite = false)
         {
             await messageDispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal,
@@ -149,8 +180,8 @@ namespace App1
                         // MessageBlock.Text += message;
                         Console.WriteLine(message);
                 });
-        }
-        */
+        } */
+        
     }
     
 }

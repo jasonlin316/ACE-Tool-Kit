@@ -1,8 +1,5 @@
 C:\Users\HP\source\repos\App1\App1\bin\x86\Debug\App.xbf
 C:\Users\HP\source\repos\App1\App1\bin\x86\Debug\MainPage.xbf
-C:\Users\HP\source\repos\App1\App1\bin\x86\Debug\App1.xr.xml
-C:\Users\HP\source\repos\App1\App1\bin\x86\Debug\App1.exe
-C:\Users\HP\source\repos\App1\App1\bin\x86\Debug\App1.pdb
 C:\Users\HP\source\repos\App1\App1\bin\x86\Debug\resources.pri
 C:\Users\HP\source\repos\App1\App1\bin\x86\Debug\AppxManifest.xml
 C:\Users\HP\source\repos\App1\App1\bin\x86\Debug\Core\App1.exe
@@ -22,8 +19,6 @@ C:\Users\HP\source\repos\App1\App1\obj\x86\Debug\App.xbf
 C:\Users\HP\source\repos\App1\App1\obj\x86\Debug\MainPage.xbf
 C:\Users\HP\source\repos\App1\App1\obj\x86\Debug\XamlSaveStateFile.xml
 C:\Users\HP\source\repos\App1\App1\obj\x86\Debug\App1.csproj.CopyComplete
-C:\Users\HP\source\repos\App1\App1\obj\x86\Debug\App1.exe
-C:\Users\HP\source\repos\App1\App1\obj\x86\Debug\App1.pdb
 C:\Users\HP\source\repos\App1\App1\obj\x86\Debug\ResourceHandlingTask.state
 C:\Users\HP\source\repos\App1\App1\obj\x86\Debug\priconfig.xml
 C:\Users\HP\source\repos\App1\App1\obj\x86\Debug\priconfig.xml.intermediate
@@ -42,3 +37,9 @@ C:\Users\HP\source\repos\App1\App1\obj\x86\Debug\qualifiers.txt.intermediate
 C:\Users\HP\source\repos\App1\App1\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\HP\source\repos\App1\App1\obj\x86\Debug\ProjectArchitectures.txt
 C:\Users\HP\source\repos\App1\App1\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636885022160000000.json
+C:\Users\HP\source\repos\App1\App1\bin\x86\Debug\NFC detect.xr.xml
+C:\Users\HP\source\repos\App1\App1\bin\x86\Debug\NFC detect.exe
+C:\Users\HP\source\repos\App1\App1\bin\x86\Debug\NFC detect.pdb
+C:\Users\HP\source\repos\App1\App1\bin\x86\Debug\Core\NFC detect.exe
+C:\Users\HP\source\repos\App1\App1\obj\x86\Debug\NFC detect.exe
+C:\Users\HP\source\repos\App1\App1\obj\x86\Debug\NFC detect.pdb
