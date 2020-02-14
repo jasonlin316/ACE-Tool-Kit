@@ -1,0 +1,34 @@
+var STRINGS = {};
+
+STRINGS.WIFI_TRANS_TITLE = 'Wireless Transfer Flashdrive';
+STRINGS.FILES_ON_DEVICE = 'File List on Your Device';
+STRINGS.FILENAME = 'File Name';
+STRINGS.FILE_SIZE = 'Size';
+STRINGS.FILE_OPER = 'Action';
+STRINGS.CONFIRM_DELETE_BOOK = 'Do you want to delete this file？';
+STRINGS.DOWNLOAD_FILE = 'Download File';
+STRINGS.DELETE_FILE = 'Delete File';
+STRINGS.USE_ONE_BROWSER = 'Failed to upload file，do not upload files on multiple browsers at once.';
+STRINGS.UPLOAD_FAILED = 'Upload failed, pleas relaunch Wireless Transfer Flashdisk';
+STRINGS.UNSUPPORTED_FILE_TYPE = 'Please select APK file';
+STRINGS.FILE_IN_QUEUE = 'File is already in upload queue';
+STRINGS.FILE_EXISTS = 'File already exists, please delete it before upload.';
+STRINGS.YOU_CHOOSE = 'You choose';
+STRINGS.CHOSEN_FILE_COUNT = 'files, you can only upload';
+STRINGS.VALID_CHOSEN_FILE_COUNT = 'files \n please select file, file name cannot be the same';
+STRINGS.CANCEL = 'cancel';
+STRINGS.SELECT_YOUR_FILES = 'Please select the file you want to upload to Wireless Transfer Flashdisk';
+STRINGS.SUPPORTED_FILE_TYPES = 'APK Supported';
+STRINGS.CANNOT_CONNECT_SERVER = 'Cannot connect to Wireless Transfer Flashdisk, please refresh page and upload again';
+STRINGS.DRAG_TO_HERE = "Drag file here to upload";
+STRINGS.SELECT_BUTTON_LABLE1 = "Select file";
+STRINGS.SELECT_BUTTON_LABLE2 = "   Multiple files upload supported";
+STRINGS.SELECT_BUTTON_LABLE = "Select file";
+STRINGS.WIFI_AVAILABLE = "WiFi Available";
+
+STRINGS.FONT_WIFI_TRANS_TITLE = 'WiFi Font Transfer';
+STRINGS.FONT_CONFIRM_DELETE_BOOK = 'Delete font?';
+STRINGS.FONT_UNSUPPORTED_FILE_TYPE = 'Select the TTF and OTF file you want to upload';
+STRINGS.FONT_SUPPORTED_FILE_TYPES = 'TTF and OTF supported';
+STRINGS.FONT_VALID_CHOSEN_FILE_COUNT = 'files \n Please select TTF or OTF file.';
+STRINGS.FONT_FILE_EXISTS = 'File exists.';
