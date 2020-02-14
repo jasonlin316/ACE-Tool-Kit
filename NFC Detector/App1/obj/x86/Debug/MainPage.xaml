@@ -7,6 +7,13 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-    <WebView x:ConnectionId='2' Name="wv"                                 />
+    <Grid>
+        <WebView x:ConnectionId='2' Grid.Row="0" Name="wv"                                 />
+        <Button x:ConnectionId='3' Name="btn"                   VerticalAlignment="Top">
+            Click to Exit
+        </Button>
+    </Grid>
+
+
 </Page>
 

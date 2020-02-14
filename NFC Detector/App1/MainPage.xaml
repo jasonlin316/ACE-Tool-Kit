@@ -7,5 +7,12 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-    <WebView Name="wv" LoadCompleted="wv_LoadCompleted"/>
+    <Grid>
+        <WebView Grid.Row="0" Name="wv" LoadCompleted="wv_LoadCompleted"/>
+        <Button Name="btn" Click="btn_Click" VerticalAlignment="Top">
+            Click to Exit
+        </Button>
+    </Grid>
+
+
 </Page>

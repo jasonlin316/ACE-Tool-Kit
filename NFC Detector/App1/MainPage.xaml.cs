@@ -27,18 +27,18 @@ namespace App1
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
+    /// 
+    
     public sealed partial class MainPage : Page
     {
         public MainPage()
         {
+      
             this.InitializeComponent();
-            //Dispatcher.Invoke(new Action(() => { /* Your code here */ }));
             this.InitializeProximityDevice();
-            //this.Suspending += OnSuspending;
-
+  
         }
 
-        
 
         /// <summary>
         /// Invoked when Navigation to a certain page fails
@@ -79,13 +79,14 @@ namespace App1
             //System.Diagnostics.Process.Start("CMD.exe", strCmdText);
             //Button_Click(null,null);
             //var result = task.WaitAndUnwrapException();
-            DefaultLaunch();
+            //DefaultLaunch("http://172.20.10.4:12345/");
+            DefaultLaunch("http://google.com");
         }
 
         // Launch the URI
-        private void DefaultLaunch()
+        private void DefaultLaunch(string link)
         {
-            string uriToLaunch = @"https://192.168.0.101:12345";
+            string uriToLaunch = @"C:\Users\HP\Desktop";
 
             // Create a Uri object from a URI string 
             var uri = new Uri(uriToLaunch);
@@ -98,7 +99,7 @@ namespace App1
                     {
                         await Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () =>
                         {
-                            wv.Navigate(new Uri("http://192.168.0.101:12345"));
+                            wv.Navigate(new Uri(link));
                         });
                     }
                     catch (Exception ex)
@@ -129,6 +130,11 @@ namespace App1
         private void wv_LoadCompleted(object sender, NavigationEventArgs e)
         {
             //this.InitializeProximityDevice();
+        }
+
+        private void btn_Click(object sender, RoutedEventArgs e)
+        {
+            DefaultLaunch("about:blank");
         }
 
         // Write a message to MessageBlock on the UI thread.

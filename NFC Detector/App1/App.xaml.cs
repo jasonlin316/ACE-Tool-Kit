@@ -36,8 +36,7 @@ namespace App1
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
-            
-            //this.InitializeProximityDevice();
+    
             
         }
 
@@ -106,81 +105,6 @@ namespace App1
             //TODO: Save application state and stop any background activity
             deferral.Complete();
         }
-
-
-        Windows.Networking.Proximity.ProximityDevice proximityDevice;
-
-        private void InitializeProximityDevice()
-        {
-            proximityDevice = Windows.Networking.Proximity.ProximityDevice.GetDefault();
-
-            if (proximityDevice != null)
-            {
-                proximityDevice.DeviceArrived += ProximityDeviceArrived;
-                proximityDevice.DeviceDeparted += ProximityDeviceDeparted;
-
-                Debug.WriteLine("Proximity device initialized.\n");
-            }
-            else
-            {
-                Debug.WriteLine("Failed to initialized proximity device.\n");
-            }
-        }
-
-        private void ProximityDeviceArrived(Windows.Networking.Proximity.ProximityDevice device)
-        {
-            string strCmdText;
-            strCmdText = "/k python ";
-            Debug.WriteLine("Proximity device arrived.\n");
-            //System.Diagnostics.Process.Start("CMD.exe", strCmdText);
-            //Button_Click(null,null);
-            //var result = task.WaitAndUnwrapException();
-            Task.FromResult(DefaultLaunch());
-
-        }
-
-        // Launch the URI
-        private async Task DefaultLaunch()
-        {
-            string uriToLaunch = @"http://www.bing.com";
-
-            // Create a Uri object from a URI string 
-            var uri = new Uri(uriToLaunch);
-            // Launch the URI
-            //wv.Navigate(new Uri("http://www.bing.com"));
-            var success = await Windows.System.Launcher.LaunchUriAsync(uri);
-            
-            if (success)
-            {
-                // URI launched
-            }
-            else
-            {
-                // URI launch failed
-            }
-        }
-
-        private void ProximityDeviceDeparted(Windows.Networking.Proximity.ProximityDevice device)
-        {
-            Debug.WriteLine("Proximate device departed. id = " + device.DeviceId + "\n");
-        }
-
-        // Write a message to MessageBlock on the UI thread.
-        /*
-        private Windows.UI.Core.CoreDispatcher messageDispatcher = Window.Current.CoreWindow.Dispatcher
-        async private void WriteMessageText(string message, bool overwrite = false)
-        {
-            await messageDispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal,
-                () =>
-                {
-                    if (overwrite)
-                       //MessageBlock.Text = message;
-                       Console.WriteLine(message);
-                    else
-                        // MessageBlock.Text += message;
-                        Console.WriteLine(message);
-                });
-        } */
         
     }
     
